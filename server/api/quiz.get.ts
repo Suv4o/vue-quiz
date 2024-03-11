@@ -4,7 +4,7 @@ import { RunnableSequence } from "@langchain/core/runnables";
 import { StructuredOutputParser } from "langchain/output_parsers";
 import { PromptTemplate } from "@langchain/core/prompts";
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async () => {
     const config = useRuntimeConfig();
     const url = randomDocumentationUrl();
     const loader = new CheerioWebBaseLoader(url, {

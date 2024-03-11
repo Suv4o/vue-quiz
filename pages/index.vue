@@ -138,7 +138,8 @@ async function resetQuiz() {
                         @click="resetQuiz"
                         class="mt-5 text-2xl font-semibold leading-6 text-gray-600"
                     >
-                        Try Again! <span aria-hidden="true">→</span>
+                        {{ isSelectedAnswerCorrect ? "Try with another question!" : "Try again!" }}
+                        <span aria-hidden="true">→</span>
                     </button>
                 </div>
             </div>
