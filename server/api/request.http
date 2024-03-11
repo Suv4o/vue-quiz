@@ -1,0 +1,5 @@
+### Get Quiz
+GET http://localhost:3000/api/quiz HTTP/1.1
+Content-Type: application/json
+
+{}

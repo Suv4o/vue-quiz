@@ -7,6 +7,9 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    runtimeConfig: {
+        openAIApiKey: process.env.OPEN_AI_API_KEY,
+    },
     typescript: {
         typeCheck: true,
         strict: true,
